@@ -1,6 +1,6 @@
 # Ivan Senchurou  
 
-## Personal information  
+## Personal information:  
 
 **Telephone:**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mobile: _+375298449387_
 
@@ -13,8 +13,7 @@
 **Nationality:**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _Belarusian_
 
 ***
-
-## Objective
+## Objective:
 
 __Want to learn how to program in JavaScript, strive to learn quickly and learn new things.__
 
@@ -32,6 +31,14 @@ __Want to learn how to program in JavaScript, strive to learn quickly and learn 
 
 ***
 
+## Skills and Proficiency:
+* **HTML5, CSS3
+* **JavaScript 
+* **GitHub
+* **VS Code, 
+* **Adobe Photoshop, Figma
+
+***
 ## Special skills
 
 * **Computer literacy** &nbsp;(_Microsoft Office, Outlook Express, Moysklad_)
