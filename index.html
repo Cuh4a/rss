@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+        <style>
+     html {
+        font-size: 15px;
+    }
+    
+    body {
+        margin: 0;
+        font-family: Verdana, sans-serif;
+        font-size: 1rem;
+    }
+    *,
+    *:before,
+    *:after {
+        box-sizing: border-box;
+        background-color: rgba(0, 0, 0, 1);
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 0;
+    }
+    .container {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1200px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    /*---------header----------*/
+    .header {
+        padding: 1rem 0;
+    }
+    .header__inner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .user {
+        display: flex;
+        flex-direction: column;
+    }
+    .user__name {
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 1rem;
+        color: rgba(238, 255, 0, 1);
+    }
+    .user__prof {
+        font-weight: 500;
+        line-height: 1rem;
+        font-size: 0.9rem;
+        color: rgba(238, 255, 0, 0.7);
+    }
+    .nav {
+        display: flex;
+        height: 100%;
+    }
+    .nav__link {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: rgba(238, 255, 0, 0.7);
+        border: 2px solid transparent;
+        border-radius: 20px;
+    }
+    .nav__link:hover {
+        color: rgba(238, 255, 0, 1);
+        transform: scale(1.1);
+    }
+    .nav__link--btn {
+        padding-left: 20px;
+        padding-right: 20px;
+        border: 2px solid rgba(238, 255, 0, 0.5);
+    }
+    .nav__link--btn:hover {
+        background-color: rgba(238, 255, 0, 1);
+        color: rgba(0, 0, 0, 1);
+        border: 2px solid rgba(0, 0, 0, 1);
+        transition: 0.8s linear;
+    }
+    /*-----------------------*/
+    
+    /*------intro-------*/
+    .intro {
+        padding-top: 80px;
+        padding-bottom: 150px;
+    }
+    .intro__inner {
+        position: relative;
+        display: flex;
+    }
+    .intro__content {
+        width: 50%;
+        margin-top: 90px;
+    }
+    .intro__subtitle {
+        font-size: 2rem;
+        font-weight: 300;
+        color: rgba(238, 255, 0, 1);
+    }
+    .intro__title {
+        font-size: 3rem;
+        font-weight: 700;
+        color: rgba(238, 255, 0, 1);
+    }
+    .intro__text {
+        margin-top: 10px;
+        font-size: 1.8rem;
+        color: rgba(238, 255, 0, 1);
+        opacity: 0.6;
+    }
+    .intro__foto {
+        width: 50%;
+    }
+    .btn {
+        margin-top: 30px;
+        padding: 0.8rem 1.8rem;
+        font-size: 1.2rem;
+        font-family: inherit;
+        font-weight: 700;
+        color: rgba(238, 255, 0, 0.7);
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 20px;
+        border: 1px solid rgba(238, 255, 0, 1);
+        text-transform: uppercase;
+        outline: none;
+    }
+    .btn:hover {
+        font-weight: 700;
+        background-color: rgba(238, 255, 0, 1);
+        color: rgba(0, 0, 0, 1);
+        border: 1px solid rgba(0, 0, 0, 1);
+        cursor: pointer;
+        transition: 0.8s linear;
+    }
+    .intro__foto {
+        position: absolute;
+        right: 0;
+        z-index: 1;
+        max-width: 400px;
+    }
+    .intro__social {
+        display: flex;
+        flex-direction: row;
+        margin-top: 1rem;
+        margin-left: -5px;
+    }
+    .social__link {
+        padding: 7px;
+    }
+    .social__link img {
+        max-width: 54px;
+        max-height: 54px;
+        border-radius: 20%;
+    }
+    
+    /*-----------------------*/
+    
+    /*-----------mainly------------*/
+    
+    .mainly__title {
+        padding: 2rem;
+        font-size: 2.4rem;
+        text-align: center;
+        text-transform: uppercase;
+        color: rgba(238, 255, 0, 1);
+    }
+    
+    .timeline {
+        position: relative;
+        display: flex;
+        width: 100%;
+        max-width: 768px;
+        margin: 3rem auto;
+        background-color: rgba(62, 63, 55, 0.719);
+        border-radius: 0.5%;
+        box-shadow: 3px 3px 3px 3px rgba(238, 255, 0, 1);
+    }
+    .timeline__half {
+        width: 50%;
+    }
+    .timeline__title-right {
+        margin: 1.5rem 0.1rem;
+        margin-left: 2rem;
+        font-size: 1rem;
+        font-weight: 700;
+        color: rgba(238, 255, 0, 1);
+        text-transform: uppercase;
+        background-color: rgba(0, 0, 0, 1);
+        box-shadow: 1px 1px 2px 2px rgba(238, 255, 0, 1);
+    }
+    .timeline__title-left {
+        margin: 1.5rem 0.1rem;
+        margin-right: 2rem;
+        font-size: 1rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: rgba(238, 255, 0, 1);
+        background-color: rgba(0, 0, 0, 1);
+        box-shadow: -1px 1px 2px 2px rgba(238, 255, 0, 1);
+    }
+    .timeline__half--left {
+        padding-left: 2rem;
+        text-align: left;
+    }
+    .timeline__half--right {
+        padding-right: 2rem;
+        text-align: right;
+    }
+    .timeline__date {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-size: 1rem;
+        text-decoration: none;
+        color: rgba(238, 255, 0, 1);
+    }
+    .timeline__adress {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-size: 1rem;
+        text-decoration: none;
+        color: rgba(238, 255, 0, 1);
+    }
+    .timeline__subtitle {
+        font-size: 1rem;
+        font-weight: 500;
+        color: rgba(238, 255, 0, 1);
+        margin-bottom: 0.3rem;
+    }
+    .timeline__position {
+        font-size: 1rem;
+        font-weight: 400;
+        color: rgba(238, 255, 0, 1);
+    }
+    .timeline__text {
+        margin-top: 0.2rem;
+        font-size: 0.8rem;
+        line-height: 1.2;
+        font-weight: 300;
+        color: rgba(238, 255, 0, 1);
+    }
+    .timline__item {
+        margin-bottom: 2.6rem;
+    }
+    .timeline__contact {
+        display: block;
+        font-size: 1rem;
+        text-decoration: none;
+        color: rgba(238, 255, 0, 1);
+        list-style-type: none;
+    }
+    .timeline__contact a {
+        font-size: 1rem;
+        line-height: 2.1;
+        text-decoration: none;
+        color: rgba(238, 255, 0, 1);
+    }
+    .timeline__aboutme {
+        display: block;
+        font-size: 1rem;
+        text-decoration: none;
+        color: rgba(238, 255, 0, 1);
+        list-style-type: none;
+    }
+    
+    .timeline:before {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        z-index: 1;
+        content: "";
+        display: block;
+        width: 4px;
+        height: 100%;
+        background-color: rgba(238, 255, 0, 1);
+        opacity: 0.4;
+    }
+    /*-----------------------*/
+    
+    /*---------Progress-bar--------------*/
+    #progress-html,
+    #progress-css,
+    #progress-js {
+        padding: 1px 0;
+        border: 0.5px solid rgba(238, 255, 0, 1);
+        background-color: rgba(238, 255, 0, 1);
+        border-radius: 13px;
+    }
+    #progress-css > div {
+        width:75%;
+        height: 6px;
+        background-color: rgba(0, 0, 0, 1);
+        border-radius: 10px;
+    }
+    #progress-js > div {
+        width: 50%;
+        height: 6px;
+        background-color: rgba(0, 0, 0, 1);
+        border-radius: 10px;
+    }
+    #progress-html > div {
+        width: 80%;
+        height: 6px;
+        background-color: rgba(0, 0, 0, 1);
+        border-radius: 10px;
+    }
+    .timline__progressbar {
+        width: 100%;
+        max-width: 355px;
+        margin-left: 1px;
+        padding-left: 30px;
+        margin-top: -1px;
+    }
+    .progressbar__text {
+        margin-bottom: -15px;
+        margin-left: -40px;
+        font-size: 0.7rem;
+        text-align: left;
+        color: rgba(238, 255, 0, 1);
+        list-style-type: none;
+    }
+    /*-----------------------*/
+    
+    /*-----------Footer------------*/
+    .footer {
+        padding-top: 100px;
+        padding-bottom: 10px;
+    }
+    .footer__foto {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer__logo {
+        max-width: 60px;
+        height: 28px;
+    }
+    .footer__text {
+        font-size: 0.8rem;
+        color: rgba(255, 255, 255, 1);
+    }
+    /*-----------------------*/
+    </style>
+    <title>Resume</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="user">
+                    <div class="user__name"> Ivan Senchurou </div>
+                    <div class="user__prof">Developer</div>
+                </div>
+                <nav class="nav">
+                    <a class="nav__link" href="#">Social</a>
+                    <a class="nav__link" href="#">Contact</a>
+                    <a class="nav__link" href="#">Skill</a>
+                    <a class="nav__link" href="#">Education</a>
+                    <a class="nav__link  nav__link--btn" href="#">HIRE ME</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <div class="intro__content">
+                    <h2 class="intro__subtitle">Hello i'm</h2>
+                    <h1 class="intro__title">Ivan Senchurou</h1>
+                    <div class="intro__text">Developer</div>
+                    <div class="intro__social">
+                        <a class="social__link" href="https://www.facebook.com/profile.php?id=100009084982052"><img
+                                src="img/favicons/facebook.png" alt=""></a>
+                        <a class="social__link" href="https://www.instagram.com/i.senchurou/"><img
+                                src="img/favicons/instagram.png" alt=""></a>
+                        <a class="social__link" href="https://www.linkedin.com/in/ivan-senchurou-234565a5/"><img
+                                src="img/favicons/linkedin.png" alt=""></a>
+                        <a class="social__link" href="https://twitter.com/Bisa30414688?s=09"><img
+                                src="img/favicons/twitter.png" alt=""></a>
+                    </div>
+                    <button class="btn" type="button">View my CV</button>
+                    <button class="btn" type="button">Download my CV</button>
+                </div>
+                <div>
+                    <img class="intro__foto" src="img/content/myfoto.png" alt="Myfoto">
+                </div>
+            </div>
+        </div>
+    </section>
+    <main class="mainly">
+        <h3 class="mainly__title">Resume</h3>
+        <div class="timeline">
+            <div class="timeline__half timeline__half--right">
+
+                <h4 class="timeline__title-right ">Education</h4>
+                <div class="timline__item">
+                    <div class="timeline__date">2005-2008 <b>Professional College</b> </div>
+                    <h5 class="timeline__subtitle">Student</h5>
+                    <div class="timeline__position"> Manager </div>
+                    <div class="timeline__text">
+                        <p>JavaScript 2.0 courses itgid.info</p> 
+                    </div>
+                </div>
+                <h4 class="timeline__title-right ">Contact ME</h4>
+                <div class="timline__item">
+                    <ul class="timeline__contact">
+                        <li><a href="tel:+375298449387">+375 (29) 844-93-87</a></li>
+                        <li><a href="mailto:cuh4a@yandex.ru">cuh4a@yandex.ru</a></li>
+                        <li><a href="skype:cuh4a">cuh4askype</a></li>
+                    </ul>
+                </div>
+                <h4 class="timeline__title-right ">SKILLS</h4>
+                <div class="timline__item">
+                    <div class="timline__progressbar">
+                        <ul>
+                            <li class="progressbar__text">HTML
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;80%
+                            </li>
+                        </ul>
+                        <div id="progress-html">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="timline__progressbar">
+                        <ul>
+                            <li class="progressbar__text">
+                                CSS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;75%
+                            </li>
+                        </ul>
+                        <div id="progress-css">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="timline__progressbar">
+                        <ul>
+                            <li class="progressbar__text">JavaScript &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;50%</li>
+                        </ul>
+                        <div id="progress-js">
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="timeline__title-right ">ABOUT ME </h4>
+                <div class="timline__item">
+                    <p class="timeline__text">Hello i'm Ivan Senchurou.</p>
+                    <p class=" timeline__text">I want to learn how to program in JavaScript.</p>
+                    <p class="timeline__text">I strive to learn quickly and learn new things. </p>
+                    <p class="timeline__text">I like to spend time at the computer. </p>
+                </div>
+            </div>
+            <div class="timeline__half timeline__half--left">
+                <h4 class="timeline__title-left ">Objective</h4>
+                <div class="timline__item">
+                    <p class=" timeline__text"><b>Depenable</b></p>
+                    <p class=" timeline__text"><b>Balanced</b></p>
+                    <p class=" timeline__text"><b>Initiative</b></p>
+                    <p class=" timeline__text"><b>Versatile</b></p>
+                </div>
+                <h4 class="timeline__title-left ">Work experience</h4>
+                <div class="timline__item">
+                    <p class=" timeline__text"><b>Lack of work experience</b></p>
+                    <p class=" timeline__text"><b>Lack of work experience </b></p>
+                    <p class=" timeline__text"><b>Lack of work experience </b></p>
+                    <p class=" timeline__text"><b>Lack of work experience </b></p>
+                </div>
+                <h4 class="timeline__title-left ">languages</h4>
+                <div class="timline__item">
+                    <p class=" timeline__text"><b>Russian</b></p>
+                    <p class=" timeline__text"><b>Belarussian</b></p>
+                    <p class=" timeline__text"><b>English</b></p>
+                    <p class=" timeline__text"><b>German</b></p>
+                </div>
+                <h4 class="timeline__title-left ">Personal information</h4>
+                <div class="timline__item">
+                    <p class=" timeline__text">Country: <b>Republic of Belarus </b></p>
+                    <p class=" timeline__text">City: <b>Mogilev</b></p>
+                    <p class=" timeline__text">Date of birth: <b>12th May 1987</b></p>
+                    <p class=" timeline__text">National: <b>Belarus</b></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__foto">
+                <a href="https://github.com/Cuh4a"><img class="footer__logo" src="img/icons/github.png"
+                        alt="github logo"></a>
+                <p class="footer__text">&copy;&nbsp; 15.12.2021</p>
+                <a href="https://rs.school/js/"><img class="footer__logo" src="img/icons/rsschool.png"
+                        alt="rsschool logo"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
