@@ -32,11 +32,11 @@ __Want to learn how to program in JavaScript, strive to learn quickly and learn 
 ***
 
 ## Skills and Proficiency:
-* **HTML5, CSS3
-* **JavaScript 
-* **GitHub
-* **VS Code, 
-* **Adobe Photoshop, Figma
+* **HTML5, CSS3**
+* **JavaScript**
+* **GitHub**
+* **VS Code** 
+* **Adobe Photoshop, Figma**
 
 ***
 ## Special skills
