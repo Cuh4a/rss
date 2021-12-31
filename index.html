@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Resume</title>
 </head>
+
 <body>
     <header class="header">
         <div class="container">
@@ -16,10 +18,10 @@
                     <div class="user__prof">Developer</div>
                 </div>
                 <nav class="nav">
-                    <a class="nav__link" href="#">Social</a>
-                    <a class="nav__link" href="#">Contact</a>
-                    <a class="nav__link" href="#">Skill</a>
-                    <a class="nav__link" href="#">Education</a>
+                    <a class="nav__link" href="#social">Social</a>
+                    <a class="nav__link" href="#contact">Contact</a>
+                    <a class="nav__link" href="#skill">Skill</a>
+                    <a class="nav__link" href="#education">Education</a>
                     <a class="nav__link  nav__link--btn" href="#">HIRE ME</a>
                 </nav>
             </div>
@@ -32,7 +34,7 @@
                     <h2 class="intro__subtitle">Hello i'm</h2>
                     <h1 class="intro__title">Ivan Senchurou</h1>
                     <div class="intro__text">Developer</div>
-                    <div class="intro__social">
+                    <div id="social" class="intro__social">
                         <a class="social__link" href="https://www.facebook.com/profile.php?id=100009084982052"><img
                                 src="img/favicons/facebook.png" alt=""></a>
                         <a class="social__link" href="https://www.instagram.com/i.senchurou/"><img
@@ -55,17 +57,18 @@
         <h3 class="mainly__title">Resume</h3>
         <div class="timeline">
             <div class="timeline__half timeline__half--right">
-
-                <h4 class="timeline__title-right ">Education</h4>
+                <h4 id="education" class="timeline__title-right ">Education</h4>
                 <div class="timline__item">
                     <div class="timeline__date">2005-2008 <b>Professional College</b> </div>
-                    <h5 class="timeline__subtitle">Student</h5>
                     <div class="timeline__position"> Manager </div>
                     <div class="timeline__text">
-                        <p>JavaScript 2.0 courses itgid.info</p> 
+                        <p>Method Array courses itgid.info</p>
+                    </div>
+                    <div class="timeline__text">
+                        <p>JavaScript 2.0 courses itgid.info</p>
                     </div>
                 </div>
-                <h4 class="timeline__title-right ">Contact ME</h4>
+                <h4 id="contact" class="timeline__title-right ">Contact ME</h4>
                 <div class="timline__item">
                     <ul class="timeline__contact">
                         <li><a href="tel:+375298449387">+375 (29) 844-93-87</a></li>
@@ -73,12 +76,12 @@
                         <li><a href="skype:cuh4a">cuh4askype</a></li>
                     </ul>
                 </div>
-                <h4 class="timeline__title-right ">SKILLS</h4>
+                <h4 id="skill" class="timeline__title-right ">Skills</h4>
                 <div class="timline__item">
                     <div class="timline__progressbar">
                         <ul>
-                            <li class="progressbar__text">HTML
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;80%
+                            <li class="progressbar__text">
+                                <pre>HTML                                      80%</pre>
                             </li>
                         </ul>
                         <div id="progress-html">
@@ -88,7 +91,7 @@
                     <div class="timline__progressbar">
                         <ul>
                             <li class="progressbar__text">
-                                CSS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;75%
+                                <pre>CSS                                    75%</pre>
                             </li>
                         </ul>
                         <div id="progress-css">
@@ -97,19 +100,23 @@
                     </div>
                     <div class="timline__progressbar">
                         <ul>
-                            <li class="progressbar__text">JavaScript &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;50%</li>
+                            <li class="progressbar__text"> 
+                                <pre>JavaScript                50%</pre> 
+                             
+                            </li>
                         </ul>
                         <div id="progress-js">
                             <div></div>
                         </div>
                     </div>
                 </div>
-                <h4 class="timeline__title-right ">ABOUT ME </h4>
+                <h4 class="timeline__title-right">About me </h4>
                 <div class="timline__item">
-                    <p class="timeline__text">Hello i'm Ivan Senchurou.</p>
-                    <p class=" timeline__text">I want to learn how to program in JavaScript.</p>
-                    <p class="timeline__text">I strive to learn quickly and learn new things. </p>
-                    <p class="timeline__text">I like to spend time at the computer. </p>
+                    <p class="timeline__text timeline__text--style">  
+                        I am from Belarus, the city of Mogilev. I work in a company engaged in the sale of fish products, as the head of the sales department. 
+                        Last year I became interested in programming, and I liked it, I chose frontend development for myself, because I like to see the result of my workright away.
+                      I am able to cope with a large number of tasks on a daily basis, I use a creative approach to solving problems. I am always energetic and eager to master new skills, I have experienced working both in a team and individually.
+                    </p>
                 </div>
             </div>
             <div class="timeline__half timeline__half--left">
@@ -119,22 +126,23 @@
                     <p class=" timeline__text"><b>Balanced</b></p>
                     <p class=" timeline__text"><b>Initiative</b></p>
                     <p class=" timeline__text"><b>Versatile</b></p>
+
                 </div>
-                <h4 class="timeline__title-left ">Work experience</h4>
+                <h4 class="timeline__title-left ">Code</h4>
                 <div class="timline__item">
-                    <p class=" timeline__text"><b>Lack of work experience</b></p>
-                    <p class=" timeline__text"><b>Lack of work experience </b></p>
-                    <p class=" timeline__text"><b>Lack of work experience </b></p>
-                    <p class=" timeline__text"><b>Lack of work experience </b></p>
+                       <p class=" timeline__text">function updateLight(current){</p> 
+                        <p class=" timeline__text">switch (current) {</p>
+                        <p class=" timeline__text">case 'green': return 'yellow';</p>
+                        <p class=" timeline__text">case 'red': return 'green';}}</p>
                 </div>
                 <h4 class="timeline__title-left ">languages</h4>
                 <div class="timline__item">
-                    <p class=" timeline__text"><b>Russian</b></p>
-                    <p class=" timeline__text"><b>Belarussian</b></p>
-                    <p class=" timeline__text"><b>English</b></p>
-                    <p class=" timeline__text"><b>German</b></p>
+                    <p class=" timeline__text"><b>Russian: native </b></p>
+                    <p class=" timeline__text"><b>Belarussian: native</b></p>
+                    <p class=" timeline__text"><b>English: A2</b></p>
+                    
                 </div>
-                <h4 class="timeline__title-left ">Personal information</h4>
+                <h4 class="timeline__title-left timeline__title-left-btm">Personal information</h4>
                 <div class="timline__item">
                     <p class=" timeline__text">Country: <b>Republic of Belarus </b></p>
                     <p class=" timeline__text">City: <b>Mogilev</b></p>
@@ -155,5 +163,7 @@
             </div>
         </div>
     </footer>
+    <script src="JS/script.js"></script>
 </body>
+
 </html>

@@ -241,12 +241,20 @@ h6 {
 .timeline__text {
     margin-top: 0.2rem;
     font-size: 0.8rem;
-    line-height: 1.2;
-    font-weight: 300;
+    line-height: 1.27;
+    font-weight: 400;
     color: rgba(238, 255, 0, 1);
+    
+}
+.timeline__title-left-btm {
+margin-top: 62px;
 }
 .timline__item {
     margin-bottom: 2.6rem;
+}
+.timeline__text--style{
+    padding-left: 24px;
+    text-align: right;
 }
 .timeline__contact {
     display: block;
