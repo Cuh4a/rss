@@ -1,1 +1,1 @@
-https://cuh4a.github.io/rsschool-cv/
+https://cv-html-senchurou.netlify.app
